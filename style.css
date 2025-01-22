@@ -1,0 +1,98 @@
+html body{
+    background: rgb(203, 163, 240);
+    color:white;
+    cursor: none;
+}
+.cursor{
+    height:20px;
+    width: 20px;
+    position:fixed;
+    pointer-events: none;
+}
+.curimg{
+    z-index: 1000;
+}
+h1{
+    font-family: "Georgia" !important;
+    color: rgb(242, 32, 98) !important;
+}
+p{
+    color:rgb(255, 255, 255) !important;
+    font-family: "cursive" !important;
+}
+.nav-link{
+    color: rgb(255, 255, 255) !important; 
+    margin-right: 10px !important;
+    font-family: "AmstelvarAlpha";
+    font-weight: bold !important;
+}
+.nav-link:hover{
+    background-color: rgb(203, 163, 240) !important;
+    border-top: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    border-radius: 0 !important;
+    transition: all 0.3s ease; 
+}
+.fs-4{
+    color: rgb(163, 74, 247);
+    font-family: "Brush Script MT";
+    font-weight: bold;
+}
+.active{
+    background-color:rgb(203, 163, 240) !important;
+    border-top: 3px solid rgb(255, 255, 255) !important;
+    border-bottom: 3px solid rgb(255, 255, 255) !important;
+    border-radius: 0 !important;
+}
+.lavendar{
+    border-radius:50%;
+    color: white;
+}
+.btn-primary{
+    background-color: rgb(163, 74, 247) !important;
+    border: 0cap !important;
+    font-weight: bold !important;
+}
+.btn-primary:hover{
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(163, 74, 247) !important ;
+    font-weight: bold;
+    border: 0cap;
+}
+.bg-body-tertiary.custom-bg{
+    background-color:rgb(203, 163, 240) !important;
+}
+.feature{
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.din:hover{
+    opacity: 0.2;
+}
+
+.a-block img:hover{
+    box-shadow: 0 0 10px black;
+}
+.b-block img:hover{
+    box-shadow: 0 0 10px black;
+}
+.c-block img:hover{
+    box-shadow: 0 0 10px black;
+}
+.d-block img:hover{
+    box-shadow: 0 0 10px black;
+}
+.e-block img:hover{
+    box-shadow: 0 0 10px black;
+}
+.f-block img:hover{
+    box-shadow: 0 0 10px black;
+}
+.list{
+    list-style: none;
+}
+.exp{
+    border: 2px solid black;
+    border-radius: 10%;
+}
