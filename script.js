@@ -81,3 +81,12 @@ main.addEventListener("mousemove", function(dets){
         ease: "power1.out",
    })
 });
+var htext= document.querySelector(".herotext");
+console.log("welcomneee", htext);
+window.addEventListener("scroll" , function(dets){
+   gsap.to(".herotext", {
+    x:-600,
+    duration:2,
+    opacity:1,
+   })
+});

@@ -1,33 +1,60 @@
 html body{
-    background: rgb(203, 163, 240);
-    color:white;
+    background: rgb(180, 163, 214);
     cursor: none;
+    position:absolute;
+    margin: 0;            /* Remove any default margins */
+    padding: 0;           /* Remove any default paddings */
+    width: 100%;          /* Ensure full width */
+    height: 100%;  
+}
+h1 , h2, h3 , h4{
+    color: #2C3E50 !important;
+    font-weight: 900 !important;
+    font-family: "Great Vibes", serif;
+}
+.pictext{
+    color: white !important;
+}
+p{
+    color: #FAF3E0;
+    font-family: "Playfair", serif;
 }
 .cursor{
     height:20px;
     width: 20px;
     position:fixed;
     pointer-events: none;
+    z-index: 100;
+}
+.hero{
+    width:100%;
+    height: 100vh;
+    position: relative;
+    background-color: black; 
+}
+.heroimg{
+    position: absolute;
+    height:100%;
+    width: 100%; 
+}
+.herotext{
+    color: rgb(255, 255, 255) !important;
+    position: absolute;
+    top:50%;
+    right:0%;
+    z-index: 10;
+    opacity: 0;
 }
 .curimg{
     z-index: 1000;
 }
-h1{
-    font-family: "Georgia" !important;
-    color: rgb(242, 32, 98) !important;
-}
-p{
-    color:rgb(255, 255, 255) !important;
-    font-family: "cursive" !important;
-}
 .nav-link{
     color: rgb(255, 255, 255) !important; 
     margin-right: 10px !important;
-    font-family: "AmstelvarAlpha";
     font-weight: bold !important;
 }
 .nav-link:hover{
-    background-color: rgb(203, 163, 240) !important;
+    background-color: rgb(180, 163, 214) !important;
     border-top: 3px solid rgb(255, 255, 255);
     border-bottom: 3px solid rgb(255, 255, 255);
     border-radius: 0 !important;
@@ -39,7 +66,7 @@ p{
     font-weight: bold;
 }
 .active{
-    background-color:rgb(203, 163, 240) !important;
+    background-color:rgb(180, 163, 214) !important;
     border-top: 3px solid rgb(255, 255, 255) !important;
     border-bottom: 3px solid rgb(255, 255, 255) !important;
     border-radius: 0 !important;
@@ -49,26 +76,42 @@ p{
     color: white;
 }
 .btn-primary{
-    background-color: rgb(163, 74, 247) !important;
+    background-color: rgb(241, 198, 216) !important;
     border: 0cap !important;
+    border-radius: 30px !important;
     font-weight: bold !important;
 }
 .btn-primary:hover{
+    transform: scale(1.02);
     background-color: rgb(255, 255, 255) !important;
-    color: rgb(163, 74, 247) !important ;
+    color: rgb(241, 198, 216) !important ;
     font-weight: bold;
     border: 0cap;
+    box-shadow:0 4px 10px rgba(0, 0, 0, 0.2) !important;
 }
 .bg-body-tertiary.custom-bg{
-    background-color:rgb(203, 163, 240) !important;
+    background-color:rgb(180, 163, 214) !important;
 }
 .feature{
+    position:relative;
     display: flex !important;
     flex-direction: column !important;
 }
-
-.din:hover{
+.feature:hover .din{
     opacity: 0.2;
+}
+.feature:hover .dininfo{
+    opacity: 1;
+}
+.feature:hover{
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0),black);
+}
+.dininfo{
+    position: absolute;
+    bottom:0%;
+    left:0%;
+    text-align: center;
+    opacity: 0;
 }
 
 .a-block img:hover{
