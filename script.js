@@ -1,5 +1,5 @@
 gsap.from(".a-block", {
-    x:-50,
+    x:-100,
     opacity:0,
     duration: 3,
     scrollTrigger: {
@@ -11,7 +11,7 @@ gsap.from(".a-block", {
     }
 })
 gsap.from(".b-block", {
-    x:50,
+    x:100,
     opacity:0,
     duration: 3,
     scrollTrigger: {
@@ -23,7 +23,7 @@ gsap.from(".b-block", {
     }
 })
 gsap.from(".c-block", {
-    x:-50,
+    x:-100,
     opacity:0,
     duration: 3,
     scrollTrigger: {
@@ -35,7 +35,7 @@ gsap.from(".c-block", {
     }
 })
 gsap.from(".d-block", {
-    x:50,
+    x:100,
     opacity:0,
     duration: 3,
     scrollTrigger: {
@@ -47,7 +47,7 @@ gsap.from(".d-block", {
     }
 })
 gsap.from(".e-block", {
-    x:-50,
+    x:-100,
     opacity:0,
     duration: 3,
     scrollTrigger: {
@@ -59,7 +59,7 @@ gsap.from(".e-block", {
     }
 })
 gsap.from(".f-block", {
-    x:50,
+    x:100,
     opacity:0,
     duration: 3,
     scrollTrigger: {
@@ -90,6 +90,21 @@ window.addEventListener("scroll" , function(dets){
     opacity:1,
    })
 });
+  gsap.to(".custom", {
+    scrollTrigger: {
+      trigger: ".custom",
+      scroll: "body",
+      start: "top 10%",
+      end: "top 90%",
+      markers: true,
+    },
+    color: "#2C3E50",
+    opacity: 1,
+    stagger: 0.5,
+    scrub: 2,
+    ease: "power2.out",
+  });
+
 
 let container = document.querySelectorAll(".anim-container");
 let numberOfShapes = 12;
